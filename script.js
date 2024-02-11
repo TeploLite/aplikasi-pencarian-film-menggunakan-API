@@ -1,34 +1,3 @@
-// $(".search-button").on("click", function () {
-//   $.ajax({
-//     url: "http://www.omdbapi.com/?apikey=3746fe2a&s=" + $(".input-keyword").val(),
-//     success: (results) => {
-//       const movies = results.Search;
-//       let cards = "";
-//       movies.forEach((m) => {
-//         cards += showCards(m);
-//       });
-//       $(".movie-container").html(cards);
-
-//       //ketika modal tombol detail di-klik
-//       $(".modal-detail-button").on("click", function () {
-//         $.ajax({
-//           url: "http://www.omdbapi.com/?apikey=3746fe2a&i=" + $(this).data("imdbid"),
-//           success: (m) => {
-//             const movieDetail = showMovieDetail(m);
-//             $(".modal-body").html(movieDetail);
-//           },
-//           error: (e) => {
-//             console.log(e.responseText);
-//           },
-//         });
-//       });
-//     },
-//     error: (e) => {
-//       console.log(e.responseText);
-//     },
-//   });
-// });
-
 //Fetch
 const searchButton = document.querySelector(".search-button");
 searchButton.addEventListener("click", function () {
